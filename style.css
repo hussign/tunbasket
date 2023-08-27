@@ -15,6 +15,12 @@ html{
 body{
     font-family: kanit, arial, sans-serif;
 }
+.left, .left img, .mid, .main-logo, .banner, .sidebar {
+    margin-top: 50px;
+}
+#toggleSidebar {
+    margin-top: 50px;
+}
 
 header{
     
@@ -55,7 +61,7 @@ header{
     width: 500px;
     height: 100px;
     margin-left: 300px; /* Augmentez cette valeur pour déplacer la bannière vers la droite */
-    margin-top: 0;
+    margin-top: 100px;
 }
 /* on a terminer le head- maintenant l'area (sidebar et mid area)*/
 
@@ -283,6 +289,39 @@ h3, p{
     color: #333;
     
 }
+.note {
+    position: fixed; /* Set the position to fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left of the viewport */
+    width: 100%; /* Make it take the full width of the viewport */
+    background-color: #0e0e0eb3; /* Example background color */
+    color: white; /* Example text color */
+    padding: 5px; /* Add some padding for spacing */
+    text-align: center; /* Center the text horizontally */
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .note .construction {
+    animation: scrollText 10s linear infinite; /* Adjust the duration as needed */
+  }
+  .note, .construction:hover {
+    animation-play-state: paused;
+
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .construction {
+    font-weight: 700;
+    font-size: medium;
+  }
+  
 
 /* Autres styles personnalisés */
 
