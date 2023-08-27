@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*,::before, ::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: kanit, arial, sans-serif;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+}
+
+.left {
+    
+    display: flex;
+    align-items: center;
+}
+.left img {
+    width: 15px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-right:5px; /* Ajoute un espace entre les logos */
+    margin-left: 2px;
+    transition: box-shadow 0.3s, border 0.3s;
+    cursor: pointer;
+}
+.left img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Effet d'éclairage au survol */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Bordure fine au survol */
+}
+.main-logo {
+    width: 180px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    width: 500px;
+    height: 100px;
+    margin-left: 300px; /* Augmentez cette valeur pour déplacer la bannière vers la droite */
+    margin-top: 0;
+}
+/* on a terminer le head- maintenant l'area (sidebar et mid area)*/
+
+.sidebar{
+    height: calc(100vh - 100px);
+    display: flex;
+    background-color: rgb(199, 197, 197);
+   
+
+}
+
+aside{
+    height: 100%;
+    width: 150px;
+    background-color: rgb(239, 238, 238);
+    overflow-y: auto;
+    transition: width 0.3s ease; /* Ajout de la transition */
+}
+.hidden aside {
+    width: 0; /* Cacher la sidebar */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black; /* Couleur du texte */
+    padding: 5px; /* Espacement autour du lien */
+    transition: background-color 0.3s; /* Transition pour le fond au survol */
+}
+
+.nav-link:hover {
+    background-color: #d26868; /* Fond gris au survol */
+    color: white;
+}
+
+
+
+
+.icon-nav {
+    width: 20px; /* Ajustez la taille selon vos besoins */
+    height: 20px; /* Ajustez la taille selon vos besoins */
+    margin-right: 5px; /* Espacement entre l'image et le texte */
+}
+.nav-text {
+    font-size: 15px; /* Taille du texte "Accueil" */
+    margin-left: 20px;
+}
+
+
+.match-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    margin-left: 55px;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+      
+    
+}
+.card{
+    background-color: #fff;
+    width: 16em;
+    height: 12em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 20%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 45px;
+    margin-top: 10px;
+    transition-duration: 0.5s;
+    
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+.logo-teams {
+    display: flex; /* Aligne les logos en ligne */
+    align-items: center; /* Centre verticalement les logos */
+}
+
+.logo-team {
+    margin-right: 10px; /* Ajoute un espace entre les logos si nécessaire */
+    margin-left: 12px;
+    
+}
+
+.logo-team1,
+.logo-team2 {
+    max-width: 50px; /* Ajustez la taille des images selon vos besoins */
+    height: auto;
+}
+
+h3, p{
+    text-align: center;
+}
+.sub-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-link {
+    text-decoration: none;
+    color: black;
+    
+    padding: 5px 40px;
+    margin: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .sub-link:hover {
+    background-color:#d26868;
+    color: rgb(255, 255, 255);
+  }
+.classement{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.liste-items{
+    display: flex;
+    justify-content: center;
+    color: black;
+    height: 100%;
+    line-height: 50px;
+    font-size: 22px;
+}
+.items{
+    font-size: 15px; /* Taille du texte "Accueil" */
+    margin-left: 50px; 
+    cursor: pointer;
+    flex-shrink: 0;
+    list-style-type: none;
+}
+.items:hover {
+    background-color: #d26868;
+    
+
+}
+.items span {
+    font-size: 20px;
+}
+.items:nth-child(2) {
+    margin-bottom: 0;
+}
+
+/* sous liste */
+.sous-liste {
+    display: none;
+    position: relative;
+    top: -2px
+     
+}
+
+.items-sous-liste {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+    background: #fbfafa;
+    border-bottom: 0.5px solid rgb(239, 238, 238)
+}
+.items-sous-liste:hover {
+    background-color:#d26868;
+    color: white;
+    
+}
+.items:hover > ul {
+    display: block;
+    
+}
+.hidden {
+    display: none;
+}
+
+/*tableau*/
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 5px 5px 10px #333;
+    font-size: medium;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.custom-table td {
+    background-color: #f0eded;
+}
+
+.custom-table th {
+    background-color: #777;
+    color: black;
+}
+
+.team-logo {
+    display: flex;
+    align-items: center;
+}
+
+.team-logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.team-logo span {
+    color: #333;
+    
+}
+
+/* Autres styles personnalisés */
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .spacework {
+        max-width: 90%; /* Limiter la largeur à 90% de la largeur de l'écran */
+        margin: 0 auto; /* Centrer horizontalement le contenu */
+        padding: 0 10px; /* Ajouter un peu d'espacement sur les côtés */
+    }
+    .sidebar {
+        position: relative;
+        z-index: 2;
+    }
+
+    .spacework {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+    }
+  
+    
+    header {
+        flex-direction: column;
+    }
+    .left, .right {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .card{
+        background-color: #fff;
+        width: 12em;
+        height: 8em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 20%);
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+        transition-duration: 0.5s;
+        
+        
+    }
+    .card:hover{
+        transform: scale(1.1);
+        cursor:pointer;
+}
+.banner{
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    
+}
+.main-logo{
+    width: 25%;
+    height:auto;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.logo-team1,
+.logo-team2 {
+    max-width: 100%; /* Ajustez la taille des images selon vos besoins */
+    height: auto; 
+
+}
+
+
+
+.match-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    margin-right: 70px;
+    
+    
+} 
+aside {
+    width: 0; /* Masquer la sidebar */
+    transition: width 0.5s; /* Ajouter une transition fluide */
+}  
+.hidden aside {
+    width: 20%; /* Afficher la sidebar */
+} 
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+    .custom-table {
+    border-collapse: collapse;
+    width: 50%;
+    box-shadow: 5px 5px 10px #333;
+    font-size:smaller;
+}
+
+}
